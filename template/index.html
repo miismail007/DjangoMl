@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Linear Regression</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+</head>
+<body>
+	<div class="login-box">
+	  <h2>Simple Linear Regression</h2>
+	  <form action="predict">
+	    <div class="user-box">
+	      <input type="text" name="exp" required="">
+	      <label>Experience</label>
+        </div>
+        <input type="submit" name="submit" value="predict"/>
+	    <!-- <a href="#">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      Predict
+	    </a> -->
+	  </form><br>
+	  <h2>{{result}}</h2>
+	</div>
+</body>
+</html>
